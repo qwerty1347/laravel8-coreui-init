@@ -22,7 +22,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 Route::get('/admin', function () {
-    return view('index');
+    return view('admin.index');
 });
 
 require __DIR__.'/auth.php';
